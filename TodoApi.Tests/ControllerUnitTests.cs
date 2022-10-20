@@ -20,9 +20,9 @@ namespace TodoApi.Tests
                 new TodoItem { Name = "Walk dog 3", IsComplete = true, Id = "9e882920-78f2-4aaa-a14a-b062345bc393" },
                 new TodoItem { Name = "Walk dog 4", IsComplete = true, Id = "9e882920-78f2-4aaa-a14a-b062345bc394" }
             };
-        private readonly TodoItem expectedItem = new () { Id = "9e882920-78f2-4aaa-a14a-b062345bc395", Name = "Walk dog", IsComplete = false };
-        private readonly TodoItem unexpectedItem = new () { Id = "9e882920-78f2-4aaa-a14a-b062345bc396", Name = "Run from Tiger", IsComplete = true };
-        private readonly TodoItem emptyItem = new () { };
+        private readonly TodoItem expectedItem = new TodoItem() { Id = "9e882920-78f2-4aaa-a14a-b062345bc395", Name = "Walk dog", IsComplete = false };
+        private readonly TodoItem unexpectedItem = new TodoItem() { Id = "9e882920-78f2-4aaa-a14a-b062345bc396", Name = "Run from Tiger", IsComplete = true };
+        private readonly TodoItem emptyItem = new TodoItem() { };
 
         public ControllerUnitTests()
         {
